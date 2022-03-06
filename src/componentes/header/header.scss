@@ -1,0 +1,211 @@
+// Breakpoints para cada uno de los diferentes mediaquery
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
+#inicio {
+  position: relative;
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../../assets/fondo_01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header__contenedor {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+
+.header__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+
+  p {
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    font-size: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-align: center;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1rem;
+    }
+  }
+
+  .onda {
+    position: relative;
+    font-size: 4rem;
+  }
+
+  .onda span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: onda 5s infinite;
+    animation-delay: calc(0.5s * var(--i));
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  @keyframes onda {
+    0%,
+    40%,
+    100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .header__nombre {
+    width: 100%;
+    padding: 1rem;
+
+    h2 {
+      width: 100%;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-align: center;
+
+      span {
+        padding-left: 1rem;
+        font-size: 2.5rem;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 0rem;
+
+      h2 {
+        font-size: 1rem;
+
+        span {
+          padding-left: 0.6rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .header__info-inicial {
+    background: var(--black-color);
+    color: var(--white-color);
+    font-size: 4rem;
+    padding-left: 4rem;
+    padding-right: 0.2rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+      padding-left: 2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.1rem;
+      padding-left: 1rem;
+      padding-right: 0.1rem;
+    }
+  }
+
+  .header__titulacion {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      right: -10px;
+      width: 10px;
+      height: 10%;
+      background: var(--black-color);
+      animation: blinkCursor 2s steps(3) infinite;
+    }
+
+    @keyframes blinkCursor {
+      0%,
+      75% {
+        opacity: 1;
+      }
+      76%,
+      100% {
+        opacity: 0;
+      }
+    }
+
+    pre {
+      height: 1.8rem;
+      font-family: var(--primary-font);
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      position: relative;
+      overflow: hidden;
+      animation: typing 15s steps(57) infinite;
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+
+    @keyframes typing {
+      0%,
+      90%,
+      100% {
+        width: 0;
+      }
+      30%,
+      60% {
+        width: 526.73px;
+      }
+    }
+  }
+}

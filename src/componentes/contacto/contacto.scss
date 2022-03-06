@@ -1,0 +1,136 @@
+// Breakpoints para cada uno de los diferentes mediaquery
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
+.contacto__contenedor {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem 0rem;
+  }
+}
+
+.contacto__cabecera {
+  position: relative;
+  width: fit-content;
+  font-size: 2rem;
+  color: var(--white-color);
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+.contacto__cabecera-inicial {
+  background: var(--white-color);
+  color: var(--negro-color);
+  padding-left: 2rem;
+  padding-right: 0.2rem;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 1.5rem;
+  }
+}
+
+.contacto__cabecera::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 20px;
+  bottom: 10px;
+  right: -24px;
+  background: var(--white-color);
+  animation: cursorInferior 0.8s steps(16) infinite;
+  animation-direction: alternate;
+
+  @media screen and (max-width: 480px) {
+    right: -20px;
+    width: 15px;
+  }
+}
+
+@keyframes cursorInferior {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.contacto__cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4em 0rem 2rem 0rem;
+  gap: 1rem;
+
+  .contacto__card {
+    min-width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    background: var(--negro-color);
+    border: 1px solid var(--white-color);
+    transition: all 0.3s ease-in-out;
+    color: var(--white-color);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: 500;
+      padding-left: 1rem;
+    }
+
+    &:hover {
+      transform: scale(0.95);
+      background: var(--white-color);
+      color: var(--negro-color);
+    }
+
+    @media screen and (max-width: 480px) {
+      min-width: 270px;
+      font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 3rem;
+  }
+}
+
+.contacto__icon {
+  color: inherit;
+  font-size: 2rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.4rem;
+  }
+}
+
+.contacto__copyright {
+  text-align: center;
+  color: var(--white-color);
+  font-size: 1.2rem;
+
+  span {
+    margin-left: 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,143 @@
+// Breakpoints para cada uno de los diferentes mediaquery
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
+.formacion__contenedor {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 480px) {
+    padding: 1rem 0rem;
+  }
+}
+
+.formacion__cabecera {
+  position: relative;
+  width: fit-content;
+  font-size: 2rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+.formacion__cabecera-inicial {
+  background: var(--black-color);
+  color: var(--white-color);
+  padding-left: 2rem;
+  padding-right: 0.2rem;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 1.5rem;
+  }
+}
+
+.formacion__cabecera::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 20px;
+  bottom: 10px;
+  right: -24px;
+  background-color: #262626;
+  animation: cursorInferior 0.8s steps(16) infinite;
+  animation-direction: alternate;
+
+  @media screen and (max-width: 480px) {
+    right: -20px;
+    width: 15px;
+  }
+}
+
+@keyframes cursorInferior {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.formacion__titulo {
+  color: var(--gray-color);
+  margin: 2rem 0px 4rem 2rem;
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.8rem;
+    margin: 1rem 0px;
+  }
+}
+
+.formacion__bloque {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 4rem 0px 4rem 2rem;
+
+  @media screen and (max-width: 480px) {
+    margin: 3rem 0px;
+  }
+
+  p {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    font-size: 0.8rem;
+  }
+
+  h4 {
+    padding: 0.5rem;
+    background: var(--black-color);
+    color: var(--white-color);
+    letter-spacing: 5px;
+    margin-right: 4rem;
+
+    @media screen and (max-width: 480px) {
+      font-size: 0.8rem;
+      margin-right: 1rem;
+    }
+  }
+
+  h5 {
+    font-size: 1rem;
+
+    @media screen and (max-width: 480px) {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.formacion__boton-motion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formacion__boton {
+  padding: 1.2rem 1.8rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: var(--white-color);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  background: linear-gradient(260deg, #6954cc 0%, #11eccc 100%);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0.8rem 1.2rem;
+  }
+}

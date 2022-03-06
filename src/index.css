@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Shizuru&display=swap");
+
+:root {
+  --font-base: "Poppins", sans-serif;
+  --font-base-logo: "Shizuru", cursive;
+  --primary-color: #ebeef2;
+  --secondary-color: #3b5998;
+  --black-color: #222;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+  --negro-color: #444444;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}

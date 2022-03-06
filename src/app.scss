@@ -1,0 +1,152 @@
+// Breakpoints para cada uno de los diferentes mediaquery
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
+.app {
+  background: var(--primary-color);
+  font-family: var(--font-base);
+}
+
+.app__contenedor {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.app__wrapper {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  padding: 4rem 2rem;
+
+  @media screen and (max-width: 480px) {
+    padding: 4rem 1rem 2rem;
+  }
+}
+
+.app__backgroundPrimario {
+  background-color: var(--primary-color);
+}
+
+.app__backgroundBlanco {
+  background: var(--white-color);
+}
+
+.app__backgroundNegro {
+  background: var(--negro-color);
+}
+
+// CSS para los puntos de navegación situados a la derecha
+.app__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  .app__navigation-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--negro-color);
+    background: #cbcbcb;
+    margin: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      border: none;
+      background-color: var(--black-color);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+// Media queries
+@media screen and (max-width: 480px) {
+  .app__navigation {
+    display: none;
+  }
+}
+
+// Animación heartbeat
+.heartbeat {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
