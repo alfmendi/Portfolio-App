@@ -15,7 +15,7 @@ const conocimientosArray = [
   "Express",
   "MongoDB",
   "MERN Stack",
-  "Python",
+  "Java",
 ];
 
 const Conocimientos = () => {
