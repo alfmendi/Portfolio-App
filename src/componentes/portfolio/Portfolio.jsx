@@ -49,6 +49,15 @@ const portfolioArray = [
     imgUrl: reactImagen,
     etiquetas: ["React", "Todo"],
   },
+  {
+    titulo: "Aplicación Eléctrica",
+    descripcion:
+      "Aplicación que permite gestionar toda la información de los clientes de una compañía eléctrica",
+    enlaceProyecto: "https://aplicacion-electrica.herokuapp.com/",
+    enlaceCodigo: "https://github.com/alfmendi/Electrica-App",
+    imgUrl: mernImagen,
+    etiquetas: ["Aplicación Web", "Todo"],
+  },
 ];
 
 const Portfolio = () => {
