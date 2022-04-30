@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 
 import { TiThMenu, TiTimes } from "react-icons/ti";
 
+import logo from "../../assets/logo.png";
+
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -11,7 +13,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <h1>A</h1>
+        {/* <h1>A</h1> */}
+        <img src={logo} alt="imagen con logo propio" />
       </div>
       <ul className="navbar__links">
         {[

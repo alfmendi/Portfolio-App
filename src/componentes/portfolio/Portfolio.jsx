@@ -90,7 +90,7 @@ const Portfolio = () => {
         transition={{ duration: 1 }}
       >
         <h2 className="portfolio__cabecera">
-          <span className="portfolio__cabecera-inicial">M</span>i Portfolio
+          <span className="portfolio__cabecera-inicial">P</span>ortfolio
         </h2>
       </motion.div>
 
