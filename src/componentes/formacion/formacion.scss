@@ -130,11 +130,18 @@
   font-size: 0.8rem;
   letter-spacing: 2px;
   font-weight: 600;
+  border-radius: 3px;
   background: linear-gradient(260deg, #6954cc 0%, #11eccc 100%);
+  transition: 0.2s ease-in-out;
 
   a {
     text-decoration: none;
     color: inherit;
+  }
+
+  &:hover {
+    box-shadow: 0 14px 26px -12px rgb(0 172 193 / 42%),
+      0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 172 193 / 20%);
   }
 
   @media screen and (max-width: 480px) {
