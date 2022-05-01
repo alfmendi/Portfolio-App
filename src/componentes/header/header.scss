@@ -103,6 +103,9 @@
   .header__nombre {
     width: 100%;
     padding: 1rem;
+    -webkit-animation: slide-in-blurred-right 2s cubic-bezier(0.23, 1, 0.32, 1)
+      both;
+    animation: slide-in-blurred-right 2s cubic-bezier(0.23, 1, 0.32, 1) both;
 
     h2 {
       width: 100%;
@@ -156,56 +159,71 @@
   }
 
   .header__titulacion {
-    position: relative;
-    width: fit-content;
-    margin: 0 auto;
+    -webkit-animation: slide-in-blurred-right 2s cubic-bezier(0.23, 1, 0.32, 1)
+      both;
+    animation: slide-in-blurred-right 2s cubic-bezier(0.23, 1, 0.32, 1) both;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 18px;
-      right: -10px;
-      width: 10px;
-      height: 10%;
-      background: var(--black-color);
-      animation: blinkCursor 2s steps(3) infinite;
+    p {
+      text-align: center;
+      font-size: 1rem;
     }
 
-    @keyframes blinkCursor {
-      0%,
-      75% {
-        opacity: 1;
-      }
-      76%,
-      100% {
-        opacity: 0;
+    @media screen and (max-width: 768px) {
+      p {
+        font-size: 0.9rem;
       }
     }
 
-    pre {
-      height: 1.8rem;
-      font-family: var(--primary-font);
-      font-weight: 600;
-      letter-spacing: 1.2px;
-      position: relative;
-      overflow: hidden;
-      animation: typing 15s steps(57) infinite;
-
-      @media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
+      p {
         display: none;
       }
     }
+  }
 
-    @keyframes typing {
-      0%,
-      90%,
-      100% {
-        width: 0;
-      }
-      30%,
-      60% {
-        width: 526.73px;
-      }
+  /**
+ * ----------------------------------------
+ * animation slide-in-blurred-right
+ * ----------------------------------------
+ */
+  @-webkit-keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+      filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+      transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-right {
+    0% {
+      -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+      -webkit-filter: blur(40px);
+      filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+      transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      opacity: 1;
     }
   }
 }

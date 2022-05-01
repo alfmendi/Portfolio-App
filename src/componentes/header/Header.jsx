@@ -32,7 +32,7 @@ const Header = () => {
             <span>A</span>lfonso <span>A</span>uzmendia <span>P</span>érez
           </h2>
           <div className="header__titulacion">
-            <pre>Titulado en el C.F.G.S. de Desarrollo de Aplicaciones Web</pre>
+            <p>Titulado en el C.F.G.S. de Desarrollo de Aplicaciones Web</p>
           </div>
         </div>
       </motion.div>
