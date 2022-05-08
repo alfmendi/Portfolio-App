@@ -29,12 +29,12 @@ const Formacion = () => {
         <div className="formacion__bloque">
           <p>Diciembre</p>
           <h4>2021</h4>
-          <h5>Finalización del ciclo</h5>
+          <h5>Finalización del CFGS DAW</h5>
         </div>
         <div className="formacion__bloque">
           <p>Septiembre</p>
           <h4>2019</h4>
-          <h5>Comienzo del ciclo</h5>
+          <h5>Comienzo del CFGS DAW</h5>
         </div>
       </motion.div>
       <motion.div
