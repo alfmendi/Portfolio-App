@@ -58,6 +58,15 @@ const portfolioArray = [
     imgUrl: mernImagen,
     etiquetas: ["Aplicación Web", "Todo"],
   },
+  {
+    titulo: "Aplicación Panstiago",
+    descripcion:
+      "Aplicación que permite gestionar los pedidos a una bocatería, incluyendo el pago mediante Stripe",
+    enlaceProyecto: "https://aplicacion-panstiago.herokuapp.com/",
+    enlaceCodigo: "https://github.com/alfmendi/Panstiago-App",
+    imgUrl: mernImagen,
+    etiquetas: ["Aplicación Web", "Todo"],
+  },
 ];
 
 const Portfolio = () => {
