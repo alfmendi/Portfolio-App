@@ -67,6 +67,15 @@ const portfolioArray = [
     imgUrl: mernImagen,
     etiquetas: ["Aplicación Web", "Todo"],
   },
+  {
+    titulo: "Aplicación Compogar",
+    descripcion:
+      "Aplicación que permite gestionar la compraventa y alquiler de inmuebles a nivel nacional",
+    enlaceProyecto: "https://aplicacion-compogar.herokuapp.com/",
+    enlaceCodigo: "https://github.com/alfmendi/Compogar-App",
+    imgUrl: mernImagen,
+    etiquetas: ["Aplicación Web", "Todo"],
+  },
 ];
 
 const Portfolio = () => {
