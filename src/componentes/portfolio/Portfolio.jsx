@@ -70,7 +70,7 @@ const portfolioArray = [
   {
     titulo: "Aplicación Compogar",
     descripcion:
-      "Aplicación que permite gestionar la compraventa y alquiler de inmuebles a nivel nacional",
+      "Aplicación que permite gestionar la compraventa y alquiler de bienes inmuebles a nivel nacional",
     enlaceProyecto: "https://aplicacion-compogar.herokuapp.com/",
     enlaceCodigo: "https://github.com/alfmendi/Compogar-App",
     imgUrl: mernImagen,
