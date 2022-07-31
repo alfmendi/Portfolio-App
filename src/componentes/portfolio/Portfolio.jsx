@@ -9,6 +9,7 @@ import ContenedorMovimientoApp from "../../contenedor/ContenedorMovimientoApp";
 
 import mernImagen from "../../assets/mernImagen.jpg";
 import reactImagen from "../../assets/reactImagen.jpg";
+import nextImagen from "../../assets/nextImagen.jpg";
 
 import "./portfolio.scss";
 
@@ -74,6 +75,15 @@ const portfolioArray = [
     enlaceProyecto: "https://aplicacion-compogar.herokuapp.com/",
     enlaceCodigo: "https://github.com/alfmendi/Compogar-App",
     imgUrl: mernImagen,
+    etiquetas: ["Aplicación Web", "Todo"],
+  },
+  {
+    titulo: "Aplicación Galizon",
+    descripcion:
+      "Aplicación que permite gestionar la compra de productos en una tienda virtual empleando Stripe",
+    enlaceProyecto: "https://aplicacion-galizon.herokuapp.com/",
+    enlaceCodigo: "https://github.com/alfmendi/Galizon-App",
+    imgUrl: nextImagen,
     etiquetas: ["Aplicación Web", "Todo"],
   },
 ];

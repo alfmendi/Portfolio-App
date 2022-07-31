@@ -16,6 +16,7 @@ const conocimientosArray = [
   "MongoDB",
   "MERN Stack",
   "Java",
+  "NextJS",
 ];
 
 const Conocimientos = () => {
