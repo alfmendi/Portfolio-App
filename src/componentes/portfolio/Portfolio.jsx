@@ -9,7 +9,7 @@ import ContenedorMovimientoApp from "../../contenedor/ContenedorMovimientoApp";
 
 import mernImagen from "../../assets/mernImagen.jpg";
 import reactImagen from "../../assets/reactImagen.jpg";
-import nextImagen from "../../assets/nextImagen.jpg";
+import nextImagen from "../../assets/nextjsImagen.jpg";
 
 import "./portfolio.scss";
 
