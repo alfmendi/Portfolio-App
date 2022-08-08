@@ -17,6 +17,7 @@ const conocimientosArray = [
   "MERN Stack",
   "Java",
   "NextJS",
+  "Redux",
 ];
 
 const Conocimientos = () => {
