@@ -9,7 +9,7 @@ import ContenedorMovimientoApp from "../../contenedor/ContenedorMovimientoApp";
 
 import mernImagen from "../../assets/mernImagen.jpg";
 import reactImagen from "../../assets/reactImagen.jpg";
-import nextImagen from "../../assets/nextjsImagen.jpg";
+// import nextImagen from "../../assets/nextjsImagen.jpg";
 
 import "./portfolio.scss";
 
@@ -18,7 +18,7 @@ const portfolioArray = [
     titulo: "Aplicación Encuesta",
     descripcion:
       "Aplicación que permite gestionar las valoraciones emitidas sobre las prácticas de una asignatura",
-    enlaceProyecto: "https://aplicacion-encuestas.herokuapp.com/",
+    enlaceProyecto: "https://aplicacion-encuestas.onrender.com",
     enlaceCodigo: "https://github.com/alfmendi/Encuesta-App",
     imgUrl: mernImagen,
     etiquetas: ["Aplicación Web", "Todo"],
@@ -27,7 +27,7 @@ const portfolioArray = [
     titulo: "Aplicación Localizador Github",
     descripcion:
       "Aplicación que permite localizar y mostrar información sobre un usuario de Github y sus repositorios",
-    enlaceProyecto: "https://aplicacion-localizador-github.herokuapp.com/",
+    enlaceProyecto: "https://aplicacion-localizador-github.onrender.com",
     enlaceCodigo: "https://github.com/alfmendi/Localizador-Github-App",
     imgUrl: reactImagen,
     etiquetas: ["React", "Todo"],
@@ -36,7 +36,7 @@ const portfolioArray = [
     titulo: "Aplicación Gestión Empleos",
     descripcion:
       "Aplicación que permite llevar a cabo la gestión de las solicitudes de empleo de cada usuario registrado",
-    enlaceProyecto: "https://aplicacion-trabajos.herokuapp.com/",
+    enlaceProyecto: "https://aplicacion-trabajo.onrender.com",
     enlaceCodigo: "https://github.com/alfmendi/Trabajo-App",
     imgUrl: mernImagen,
     etiquetas: ["Aplicación Web", "Todo"],
@@ -45,7 +45,7 @@ const portfolioArray = [
     titulo: "Aplicación Criptos",
     descripcion:
       "Aplicación que permite consultar la cotización de diversas criptomonedas en tiempo real",
-    enlaceProyecto: "https://aplicacion-criptos.herokuapp.com/",
+    enlaceProyecto: "https://aplicacion-cripto.onrender.com",
     enlaceCodigo: "https://github.com/alfmendi/Cripto-App",
     imgUrl: reactImagen,
     etiquetas: ["React", "Todo"],
@@ -54,7 +54,7 @@ const portfolioArray = [
     titulo: "Aplicación Eléctrica",
     descripcion:
       "Aplicación que permite gestionar toda la información de los clientes de una compañía eléctrica",
-    enlaceProyecto: "https://aplicacion-electrica.herokuapp.com/",
+    enlaceProyecto: "https://aplicacion-electrica.onrender.com",
     enlaceCodigo: "https://github.com/alfmendi/Electrica-App",
     imgUrl: mernImagen,
     etiquetas: ["Aplicación Web", "Todo"],
@@ -63,7 +63,7 @@ const portfolioArray = [
     titulo: "Aplicación Panstiago",
     descripcion:
       "Aplicación que permite gestionar los pedidos a una bocatería, incluyendo el pago mediante Stripe",
-    enlaceProyecto: "https://aplicacion-panstiago.herokuapp.com/",
+    enlaceProyecto: "https://aplicacion-panstiago.onrender.com",
     enlaceCodigo: "https://github.com/alfmendi/Panstiago-App",
     imgUrl: mernImagen,
     etiquetas: ["Aplicación Web", "Todo"],
@@ -72,20 +72,20 @@ const portfolioArray = [
     titulo: "Aplicación Compogar",
     descripcion:
       "Aplicación que permite gestionar la compraventa y alquiler de bienes inmuebles a nivel nacional",
-    enlaceProyecto: "https://aplicacion-compogar.herokuapp.com/",
+    enlaceProyecto: "https://aplicacion-compogar.onrender.com",
     enlaceCodigo: "https://github.com/alfmendi/Compogar-App",
     imgUrl: mernImagen,
     etiquetas: ["Aplicación Web", "Todo"],
   },
-  {
-    titulo: "Aplicación Galizon",
-    descripcion:
-      "Aplicación que permite gestionar la compra de productos en una tienda virtual empleando Stripe",
-    enlaceProyecto: "https://aplicacion-galizon.herokuapp.com/",
-    enlaceCodigo: "https://github.com/alfmendi/Galizon-App",
-    imgUrl: nextImagen,
-    etiquetas: ["Aplicación Web", "Todo"],
-  },
+  // {
+  //   titulo: "Aplicación Galizon",
+  //   descripcion:
+  //     "Aplicación que permite gestionar la compra de productos en una tienda virtual empleando Stripe",
+  //   enlaceProyecto: "https://aplicacion-galizon.herokuapp.com/",
+  //   enlaceCodigo: "https://github.com/alfmendi/Galizon-App",
+  //   imgUrl: nextImagen,
+  //   etiquetas: ["Aplicación Web", "Todo"],
+  // },
 ];
 
 const Portfolio = () => {
